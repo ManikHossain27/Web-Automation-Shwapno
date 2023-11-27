@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Java/workspaceIntelliJ/Shwapno">
+    <test verbose="2" preserve-order="true" name="C:/Java/workspaceIntelliJ/Web Automation Shwapno">
         <classes>
             <class name="testCases.SelectYourDeliveryLocation">
                 <methods>
                     <include name="setDeliveryLocation"/>
+                </methods>
+            </class>
+            <class name="testCases.AddAnItemInCart">
+                <methods>
+                    <include name="AddMixedDalToCart"/>
+                </methods>
+            </class>
+            <class name="testCases.LoginFunctionality">
+                <methods>
+                    <include name="loginWithMobileNumber"/>
                 </methods>
             </class>
         </classes>

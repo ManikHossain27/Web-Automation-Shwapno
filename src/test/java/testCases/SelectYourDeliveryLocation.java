@@ -18,10 +18,12 @@ public class SelectYourDeliveryLocation extends Hooks {
         homePage.selectByVisibleText(homePage.selectYourCity, "Dhaka");
 
         //Select Your Area
-        homePage.selectByValueWithScroll(homePage.selectYourArea, homePage.scrollYourArea,"26346");
+        homePage.selectByValue(homePage.selectYourArea,"26346");
 
         //Click on Submit button
         homePage.click(homePage.submitBtn);
+
+        Assert.assertEquals(homePage.getText(homePage.selectedAreaName), "WARI");
 
         //Click On Cancel
         //homePage.click(homePage.cancelIcon);
